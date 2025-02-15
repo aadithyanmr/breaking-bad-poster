@@ -17,7 +17,6 @@
 
   section {
     background-image: url('./resources/breaking-bad.avif');
-    background-position: 0px;
     width: 98%;
     height: 800px;
     background-size: cover;
@@ -32,21 +31,19 @@
   .card {
     width: 35%;
     height: 720px;
-    margin: 0px 0px 0px 10px;
-    background-color: #e2aa28a4;
+    background-color: #d09d25bd;
     backdrop-filter: blur(5px);
     padding: 10px 40px 10px 40px;
-    transition: 0.1s ease-in-out;
     text-align: center;
   }
 
   .card-heading {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Impact;
     text-align: center;
     color: #055f3a;
     font-size: 40px;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 10px;
     margin: 15px 0px;
     font-weight: 300;
   }
@@ -54,14 +51,6 @@
   .poster {
     width: 225px;
     height: 300px;
-  }
-
-  #movie-details {
-    display: inline-block;
-    border: 3px solid rgb(157, 37, 37);
-    width: 350px;
-    height: 300px;
-    margin-bottom: 4px;
   }
 
   #language {
@@ -95,27 +84,17 @@
     font-weight: 500;
   }
 
-  .ratings {
-    width: 100%;
-    height: 30px;
-    padding-left: 0px;
-  }
-
   strong {
     display: block;
     margin: auto;
   }
 
-  #rate-box {
-    width: 10%;
-    height: 100%;
-  }
 
   #rating {
     color: #055f3a;
     font-size: 12px;
-    letter-spacing: 0px;
-    padding-top: 15px;
+    padding-top: 12px;
+    letter-spacing: .5px;
   }
 
   #watch-now:active {
@@ -126,27 +105,24 @@
 
 <body>
   <section>
-
-    <div class="card">
+    <article class="card">
       <h3 class="card-heading">breaking bad</h3>
-      <div id="poster-part">
-        <img src="./resources/breaking-bad-green.webp" alt="poster image" class="poster">
-      </div>
+
+      <img src="./resources/breaking-bad-green.webp" alt="poster image" class="poster">
 
       <strong id="language">Language . English</strong>
 
       <p id="desc">Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the
         meth-making business to repay his medical debts. His priorities begin to change when he partners with
-        Jesse.</p>
+        Jesse.
+      </p>
       <button id="watch-now" href="#">watch now</button>
       <div class="ratings">
-        <div>
-          <p id="rating">9.5/10 IMDb</p>
-          <p id="rating">96% Rotten Tomatoes</p>
-          <p id="rating">9.5/10 prime Video</p>
-        </div>
+        <p id="rating">9.5/10 IMDb</p>
+        <p id="rating">96% Rotten Tomatoes</p>
+        <p id="rating">9.5/10 prime Video</p>
       </div>
-    </div>
+    </article>
   </section>
 </body>
 
